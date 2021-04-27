@@ -1,0 +1,22 @@
+nav
+{
+    box-shadow: none;
+    .logout
+    {
+        cursor: pointer;
+    }
+    .active
+    {
+        color:#000;
+    }
+    .social
+    {
+        display: flex;
+        align-items: center;
+        margin:0 20px;
+        a
+        {
+            color:#fff;
+        }
+    }
+}

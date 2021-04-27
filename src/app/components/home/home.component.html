@@ -1,0 +1,30 @@
+<div class="row my-5">
+    <div class="col-md-4">
+        <div class="brdr w-25"></div>
+        <h2 class = "py-3">Trending <br> Movies <br> To Watch Now</h2>
+        <div class="brdr w-100"></div>
+    </div>
+    <div class="col-md-2" *ngFor = 'let movie of trendingMovies'> 
+        <div [routerLink] = "['/movieDetails',movie.media_type,movie.id]" class="movie position-relative"> 
+            <img [src] = "imagePrefix+movie.poster_path" class = "w-100 img-fluid" alt="">
+            <h4 class = "h5 text-center my-3">{{ movie.title }}{{ movie.name }}</h4>
+            <div class = "vote">{{ movie.vote_average }}</div>
+        </div>
+    </div>
+    <a routerLink = "/movies" class = "w-100 btn btn-primary my-4">Watch All Movies</a>
+</div>
+<div class="row my-5">
+    <div class="col-md-4">
+        <div class="brdr w-25"></div>
+        <h2 class = "py-3">Trending <br> Tv <br> To Watch Now</h2>
+        <div class="brdr w-100"></div>
+    </div>
+    <div class="col-md-2" *ngFor = 'let tv of trendingTv'> 
+        <div [routerLink] = "['/movieDetails',tv.media_type,tv.id]" class="tv position-relative"> 
+            <img [src] = "imagePrefix+tv.poster_path" class = "w-100 img-fluid" alt="">
+            <h4 class = "h5 text-center my-3">{{ tv.title }}{{ tv.name }}</h4>
+            <div class = "vote">{{ tv.vote_average }}</div>
+        </div>
+    </div>
+    <a routerLink = "/tv" class = "w-100 btn btn-primary my-4">Watch All Tv</a>
+</div>

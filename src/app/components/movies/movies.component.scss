@@ -1,0 +1,27 @@
+input
+{
+    background-color: transparent;
+    box-shadow: none;
+    outline: 0;
+    border-radius: 0;
+    border:0;
+    border-bottom: 2px solid #fff;
+    color:#fff !important;
+    font-size:20px;
+}
+input:focus
+{
+    background-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+input::placeholder
+{
+    color:#fff;
+    font-size: 20px;
+}
+.pagination a
+{
+    color:#000 !important;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+<div class="row my-5">
+    <div class="col-md-4">
+        <img [src] = "imagePrefix + movieDetail?.poster_path" class = "w-100 img-fluid" alt="">
+    </div>
+    <div class="col-md-8">
+        <h2 class = "mb-3">{{ movieDetail?.title }}{{ movieDetail?.name }}</h2>
+        <p class = "h5 secondFontColor">{{ movieDetail?.tagline }}</p>
+        <div class = "bg-info p-1 rounded mx-2 mt-4 d-inline-block" *ngFor = "let gen of movieDetail?.genres">
+            {{ gen.name }}
+        </div>
+        <p class = "h5 secondFontColor mt-4">Vote_Average: {{ movieDetail?.vote_average }}</p>
+        <p class = "h5 secondFontColor mt-4">popularity: {{ movieDetail?.popularity }}</p>
+        <p class = "h5 secondFontColor mt-4">release_date: {{ movieDetail?.release_date }}</p>
+        <p class = "h5 secondFontColor my-4 lead">{{ movieDetail?.overview }}</p>
+    </div>
+</div>

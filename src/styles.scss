@@ -1,0 +1,101 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap');
+$bgColor:#131722;
+$lightBgColor:#24baef;
+$bgTransparent:rgba(36,186,239,.6);
+$fontColor:#fff;
+$borderColor:#a8a8a83d;
+$borderHeight:1px;
+$secondFontColor:#949cb0;
+.secondFontColor
+{
+    color:$secondFontColor;
+}
+.btn-mine
+{
+    background: $lightBgColor;
+    color:$fontColor;
+}
+.btn-outline-mine
+{
+    color:$lightBgColor;
+    border:solid 1px $lightBgColor;
+}
+body
+{
+    background: $bgColor;
+    color:$fontColor;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.vote
+{
+    position: absolute;
+    top:0;
+    right:10px;
+    background: $lightBgColor;
+    padding:8px;
+    font-weight: 600;
+    font-size: 12px;
+}
+.brdr
+{
+    height:$borderHeight;
+    background: $borderColor;
+}
+.bgColor
+{
+    background: $bgColor;
+}
+.nav-shadow
+{
+    box-shadow: 0 0 8px rgba(51,51,51,.3);
+}
+a
+{
+    color:$fontColor !important;
+}
+.movie-layer
+{
+    position: relative;
+}
+.movie-caption
+{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    left:0;
+    background: $bgTransparent;
+    padding:10px;
+    font-size: 14px;
+    color:$fontColor !important;
+}
+.bgMain
+{
+    background:$bgColor;
+}
+.bgLight
+{
+    background: $lightBgColor;
+}
+.movie
+{
+    cursor: pointer;
+}
+nav
+{
+    box-shadow:0 0 8px rgba(51,51,51,.3);
+}
+nav ul li a
+{
+    color: $fontColor;
+}
+nav
+{
+    font-size:1.1rem !important;
+}
+nav ul li a.active
+{
+    color: rgb(255, 26, 26) !important;
+    border-bottom: 2px solid rgb(255, 26, 26);
+}
