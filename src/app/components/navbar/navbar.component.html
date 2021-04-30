@@ -43,6 +43,9 @@
                     <a *ngIf="!isLoggedIn" class="nav-link" routerLink = "/login" routerLinkActive = "active">Login</a>
                 </li>
                 <li class="nav-item">
+                  <a *ngIf="isLoggedIn" class="nav-link username">{{ username }}</a>
+              </li>
+                <li class="nav-item">
                     <a *ngIf="isLoggedIn" class="nav-link logout" (click) = "logout()">Logout</a>
                 </li>
             </ul>
